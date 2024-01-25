@@ -9,6 +9,10 @@
           "key": "key.origins.primary_active"
         }
     },
+    "entity_action": {
+        "type": "origins:play_sound",
+        "sound": "entity.turtle.egg_crack"
+    },
     "shell": {
         "condition": {
             "type": "origins:power_active",
@@ -32,6 +36,31 @@
         "modifier":{
             "attribute": "minecraft:generic.attack_damage",
             "value": 6.0,
+            "operation": "addition"
+        }
+    },
+    "fast":{
+        "condition": {
+            "type": "origins:power_active",
+            "power": "aquatic:shellsmash_toggle"
+        },
+        "type": "origins:conditioned_attribute",
+        "modifier":{
+            "attribute": "minecraft:generic.movement_speed",
+            "value": 0.08,
+            "operation": "addition"
+        }
+    },
+    "slow":{
+        "condition": {
+            "type": "origins:power_active",
+            "power": "aquatic:shellsmash_toggle",
+            "inverted": true
+        },
+        "type":"origins:conditioned_attribute",
+        "modifier":{
+            "attribute": "minecraft:generic.movement_speed",
+            "value": -0.05,
             "operation": "addition"
         }
     }
