@@ -5,8 +5,7 @@
         "origins:swim_speed",
         "origins:like_water",
         "aquatic:breathair",
-        "aquatic:shellsmash",
-        "aquatic:radar"
+        "aquatic:shellsmash"
     ],
     "icon": "minecraft:turtle_helmet",
     "order": 15,
