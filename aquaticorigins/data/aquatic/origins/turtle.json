@@ -1,0 +1,17 @@
+{
+    "powers": [
+        "origins:natural_armor",
+        "origins:water_breathing",
+        "origins:water_vision",
+        "origins:aqua_affinity",
+        "origins:swim_speed",
+        "origins:like_water",
+        "origins:like_air",
+        "aquatic:breathair"
+    ],
+    "icon": "minecraft:turtle_helmet",
+    "order": 15,
+    "impact": 3,
+    "name": "Turtle",
+    "description": "Placeholder turtle description"
+}
