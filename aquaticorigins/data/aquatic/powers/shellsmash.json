@@ -1,0 +1,38 @@
+{
+    "name": "Shell Smash",
+    "description": "Come in or out of shell",
+    "type": "origins:multiple",
+
+    "toggle": {
+        "type": "origins:toggle",
+        "key": {
+          "key": "key.origins.primary_active"
+        }
+    },
+    "shell": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "aquatic:shellsmash_toggle",
+            "inverted": true
+        },
+        "type": "origins:conditioned_attribute",
+        "modifier":{
+            "attribute": "minecraft:generic.armor",
+            "value": 8.0,
+            "operation": "addition"
+        }
+        
+    },
+    "strong": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "aquatic:shellsmash_toggle"
+        },
+        "type": "origins:conditioned_attribute",
+        "modifier":{
+            "attribute": "minecraft:generic.attack_damage",
+            "value": 6.0,
+            "operation": "addition"
+        }
+    }
+}

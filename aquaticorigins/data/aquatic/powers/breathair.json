@@ -9,5 +9,6 @@
         "type": "origins:submerged_in",
         "fluid": "minecraft:water",
         "inverted": true
-    }
+    },
+    "hidden": true
 }

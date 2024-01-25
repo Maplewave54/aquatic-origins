@@ -1,0 +1,23 @@
+{
+    "name": "Radar",
+    "description": "Causes moving entities to glow. Can be toggled.",
+    "type": "origins:multiple",
+
+    "toggle": {
+        "type": "origins:toggle",
+        "key": {
+          "key": "key.origins.secondary_active"
+        }
+    },
+    "glow": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "aquatic:radar_toggle"
+        },
+
+        "type": "origins:entity_glow",
+        "entity_condition": {
+            "type": "origins:moving"
+        }
+    }
+}
